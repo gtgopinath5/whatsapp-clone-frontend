@@ -1,0 +1,46 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* App Container */
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #464643;
+}
+
+/* App Body */
+.app_body {
+  display: flex;
+  background-color: #ededed;
+  height: 90vh;
+  width: 90vw;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softened shadow */
+  border-radius: 10px; /* Added border radius for a modern look */
+  overflow: hidden; /* Ensures content doesn’t overflow the container */
+  margin-top: -20px; /* Adjusted margin-top for better alignment */
+}
+
+/* Adjustments for better responsiveness */
+@media (max-width: 768px) {
+  .app_body {
+    flex-direction: column;
+    height: 95vh;
+    width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .app_body {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

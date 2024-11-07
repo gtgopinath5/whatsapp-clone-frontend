@@ -1,0 +1,113 @@
+/* Chat Item Container */
+.sidebarChat {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    background-color: #ffffff; /* White background for chat items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* Rounded corners for modern look */
+    margin-bottom: 15px; /* Space between chat items */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Hover Effect for Chat Item */
+.sidebarChat:hover {
+    background-color: #f0f2f5; /* Light gray background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: scale(1.02); /* Slight scale effect for a subtle lift */
+}
+
+/* Info Container within Chat Item */
+.sidebarChat_info {
+    margin-left: 15px;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Title Text */
+.sidebarChat_info > h2 {
+    font-size: 16px; /* Size for the chat title */
+    font-weight: 600; /* Bold weight for the title */
+    margin: 0;
+    color: #484747; /* Darker text color for better contrast */
+    line-height: 1.4; /* Improved line height for readability */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Subtitle Text */
+.sidebarChat_info > p {
+    font-size: 14px; /* Size for the chat subtitle */
+    color: #88929f; /* Subtle gray color for the subtitle */
+    margin: 0;
+    margin-top: 4px; /* Space between title and subtitle */
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover Effect for Chat Info */
+.sidebarChat:hover .sidebarChat_info > h2 {
+    color: #25d366; /* WhatsApp green on hover */
+}
+
+.sidebarChat:hover .sidebarChat_info > p {
+    color: #34b7f1; /* WhatsApp blue on hover */
+}
+
+/* Add New Chat Button */
+.sidebarChat--addNew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #0a0b0a; /* WhatsApp green border */
+    background-color: #ffffff;
+    color: #20a04f; /* WhatsApp green text */
+    font-size: 20px; /* Larger font size for emphasis */
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners for consistency */
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Add New Chat Button */
+.sidebarChat--addNew:hover {
+    background-color: #e8f5e9; /* Light green background on hover */
+    border-color: #1b5e20; /* Darker green border on hover */
+    color: #1b5e20; /* Darker green text on hover */
+    transform: scale(1.05); /* Slight scale effect for emphasis */
+}
+
+/* Badge for New Messages */
+.sidebarChat .badge {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #ff5722; /* Vibrant orange badge color */
+    color: #ffffff; /* White text color for badge */
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 4px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Avatar Container */
+.sidebarChat_avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circle shape for avatars */
+    background-color: #ffffff; /* Light gray background for avatars */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}

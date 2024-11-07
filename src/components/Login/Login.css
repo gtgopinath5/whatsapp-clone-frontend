@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffefc; /* WhatsApp-like background color */
+}
+
+/* Login Container */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ece5dd;
+}
+
+.login__container {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 15px; /* Slightly more rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  width: 360px; /* Increased width for better spacing */
+  max-width: 100%; /* Ensure responsiveness */
+  border: 1px solid #ddd; /* Subtle border for definition */
+}
+
+/* Logo */
+.login__container > img {
+  object-fit: contain;
+  height: 120px; /* Medium-sized image */
+  margin-bottom: 20px;
+}
+
+/* Header Text */
+.login__text > h1 {
+  font-size: 28px; /* Larger text size */
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600; /* Slightly bolder text */
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 20px;
+  text-transform: inherit !important;
+  background-color: #25d366 !important; /* WhatsApp green */
+  color: white;
+  padding: 12px 24px; /* Slightly larger padding */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for scaling */
+  width: 100%;
+  font-size: 16px; /* Slightly larger text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
+}
+
+.btn:hover {
+  background-color: #128c7e !important; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Form Styles */
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input Styles */
+.login__input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* More rounded corners */
+  width: 100%;
+}
+
+.login__input:focus {
+  border-color: #25d366; /* Green border on focus */
+  box-shadow: 0 0 6px rgba(37, 211, 102, 0.5); /* Green shadow on focus */
+}
+
+/* Label Styles */
+.login__label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Error and Success Messages */
+.login__error {
+  color: #dc3545;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login__success {
+  color: #28a745;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Register Link */
+.login__register {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.login__register a {
+  color: #25d366;
+  text-decoration: none;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+}
